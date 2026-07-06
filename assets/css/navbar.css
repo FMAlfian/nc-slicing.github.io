@@ -1,0 +1,159 @@
+/* =========================
+        NAVBAR
+========================= */
+
+.navbar-custom {
+    /* padding: 22px 0; */
+    height: 80px;
+    transition: .35s;
+    /* background: rgba(255, 255, 255, .82); */
+    background: transparent;
+    backdrop-filter: blur(18px);    
+    z-index: 999;
+    border-bottom: 1px solid var(--neutral-stroke, #E5E7EB)
+}
+
+/* Scroll Effect */
+
+.navbar-custom.scrolled {
+
+    padding: 14px 0;
+
+    box-shadow:
+
+        0 15px 40px rgba(40, 40, 80, .08);
+
+}
+
+/* Logo */
+
+.logo {
+
+    height: 34px;
+
+    width: auto;
+
+}
+
+/* Navigation */
+
+.navbar-nav {
+
+    gap: 16px;
+
+}
+
+.nav-link {
+    position: relative;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--primary-neutral-black) !important;    
+    transition: var(--transition);
+    padding: .65rem .9rem !important;
+
+}
+
+.nav-link.secondary {    
+    color: var(--secondary-neutral-black) !important;    
+}
+
+/* Hover */
+
+.nav-link:hover {
+
+    color: var(--primary) !important;
+
+}
+
+/* Active */
+
+.nav-link.active {
+
+    color: var(--primary) !important;
+
+    font-weight: 600;
+
+}
+
+/* .nav-link.active::after {
+    content: "";
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: 2px;
+    height: 2px;
+    border-radius: 100px;
+    background: var(--primary);
+} */
+
+/* CTA Button */
+
+.btn-start {
+    display: inline-flex;
+    align-items: center;    
+    padding: 12px 18px;
+    background: #000130;
+    color: #FAFAFA;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: var(--transition);    
+    width: 156px;
+    height: 44px;    
+    opacity: 1;
+    gap: 11px;    
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px -1px #0000001A;        
+    font-size: 14px;        
+    text-align: center;
+    vertical-align: middle;
+}
+
+.btn-start:hover {
+    transform: translateY(-3px);
+    background: #000130;
+    color: #FAFAFA;
+}
+
+.btn-start svg {
+    transition: .3s;
+}
+
+.btn-start:hover svg {
+    transform: translateX(4px);
+}
+
+/* Mobile */
+
+@media(max-width:991px) {
+
+    .navbar-collapse {
+
+        margin-top: 18px;
+
+        background: #FFF;
+
+        padding: 20px;
+
+        border-radius: 20px;
+
+        box-shadow: var(--shadow);
+
+    }
+
+    .navbar-nav {
+
+        gap: 4px;
+
+        margin-bottom: 18px;
+
+    }
+
+    .btn-start {
+
+        justify-content: center;
+
+        width: 100%;
+
+    }
+
+}

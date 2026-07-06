@@ -1,0 +1,250 @@
+.database-section {
+    background:#FAFAFA;
+    padding: 40px 0;
+    overflow: hidden;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+/*==========================
+Heading
+===========================*/
+
+.section-heading {
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+.section-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 22px;
+    border-radius: 12px;
+    border: 1px solid #E5E7EB;
+    background: #FAFAFA;
+    font-weight: 500;
+    color: #6f42ff;
+}
+
+.section-heading h2 {
+    color: var(--secondary-neutral-black);
+    font-size: var(--h3-heading);
+    font-weight: 400;    
+    line-height: 1.2;
+}
+
+.section-heading p {
+    color: #6B7280;
+    font-size: var(--label-1);
+    line-height: 1.5;
+    max-width: 760px;
+    margin: 25px auto 0;
+}
+
+/*==========================
+Banner
+===========================*/
+
+.database-banner {
+    background:
+        linear-gradient(135deg,
+            #f5ebff,
+            #f3eaff);
+    border-radius: 28px;
+    padding: 70px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 35px;
+}
+
+.database-banner::after {
+    content: "";
+    position: absolute;
+    right: -100px;
+    top: -50px;
+    width: 500px;
+    height: 500px;
+    background:
+        radial-gradient(rgba(114, 76, 255, .15),
+            transparent 70%);
+}
+
+.database-banner h3 {
+    font-size: var(--h4-heading);
+    font-weight: 400;
+    color: #222;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.database-banner p {
+    color: #6B7280;
+    font-size: var(--label-1);
+    margin-bottom: 40px;    
+}
+
+.btn-database {
+    background: linear-gradient(135deg,
+            #7b2cff,
+            #4d18ff);
+    color: white;
+    padding: 16px 34px;
+    border-radius: 14px;
+    font-weight: 600;
+    box-shadow:
+        0 15px 35px rgba(103, 58, 255, .35);
+}
+
+.btn-database:hover {
+    color: white;
+    transform: translateY(-3px);
+}
+
+.database-image {
+    position: relative;
+    text-align: right;
+}
+
+.database-image img {
+    max-width: 520px;
+    position: absolute;
+    bottom: -200px;
+    right: -75px;
+}
+
+/*==========================
+Feature Card
+===========================*/
+
+.feature-card {
+    background:
+        linear-gradient(180deg,
+            #641cff,
+            #4d0fd7);
+    border-radius: 24px;
+    padding: 40px;
+    color: white;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    transition: .35s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+}
+
+.feature-card h4 {
+    font-size: 34px;
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+
+.feature-card p {
+    color: rgba(255, 255, 255, .85);
+    margin-bottom: 35px;
+}
+
+.lightning {
+    width: 170px;
+    height: 170px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+    border-radius: 30px;
+    background:
+        rgba(255, 255, 255, .18);
+    backdrop-filter: blur(20px);
+    box-shadow:
+        inset 0 0 0 2px rgba(255, 255, 255, .15);
+}
+
+/*==========================
+Analytics
+===========================*/
+
+.analytics-box {
+    background: white;
+    border-radius: 18px;
+    padding: 25px;
+    margin-bottom: 35px;
+    color: #222;
+    position: relative;
+}
+
+.shield {
+    width: 65px;
+    height: 65px;
+    background: #222;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    position: absolute;
+    top: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.progress {
+    height: 10px;
+    border-radius: 20px;
+    background: #eee;
+}
+
+.progress-bar {
+    background: #6d35ff;
+}
+
+.second {
+    width: 38%;
+}
+
+/*==========================
+Tags
+===========================*/
+
+.database-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.database-tags span {
+    padding: 14px 22px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, .14);
+    border: 1px solid rgba(255, 255, 255, .15);
+    backdrop-filter: blur(8px);
+    font-weight: 600;
+}
+
+/*==========================
+Responsive
+===========================*/
+
+@media(max-width:992px) {
+    .database-banner {
+        padding: 40px;
+    }
+    .database-banner h3 {
+        font-size: 36px;
+    }
+    .section-heading h2 {
+        font-size: 40px;
+    }
+    .database-image {
+        text-align: center;
+        margin-top: 40px;
+    }
+    .database-image img {
+        max-width: 100%;
+    }
+    .feature-card {
+        padding: 30px;
+    }
+}

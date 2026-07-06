@@ -1,0 +1,486 @@
+/* ========================================
+   GOOGLE FONT
+======================================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* ========================================
+   SECTION
+======================================== */
+
+.marketplace-section{
+    background:#FAFAFA;
+    overflow:hidden;
+    position:relative;
+    padding:100px 0;
+    border-bottom:1px solid #E5E7EB;
+}
+
+.marketplace-section .container{
+
+    max-width:1320px;
+
+}
+
+/* ========================================
+   BADGE
+======================================== */
+
+.marketplace-badge{
+
+    background:#fff;
+    color:var(--primary);
+
+    padding:10px 18px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    font-size:.9rem;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.marketplace-badge i{
+
+    width:28px;
+    height:28px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:8px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color:#fff;
+
+}
+
+/* ========================================
+   TITLE
+======================================== */
+
+.marketplace-title{
+
+    color:var(--heading);
+    font-size:var(--h3-heading);
+    font-weight:500;
+    line-height:1.15;
+    margin-top:28px;
+    letter-spacing:-1px;
+
+}
+
+/* ========================================
+   DESCRIPTION
+======================================== */
+
+.marketplace-description {
+    color: #6B7280;
+    font-size: var(--label-1);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* ========================================
+   NAVIGATION
+======================================== */
+
+.marketplace-navigation{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:15px;
+
+}
+
+.marketplace-prev,
+.marketplace-next{
+    width:34px;
+    height:34px;
+    border-radius:50%;
+    background:#FFF;    
+    border: 0.89px solid #E5E7EB;
+    color:var(--secondary-neutral-black);
+    transition:var(--transition);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:20px;
+}
+
+.marketplace-prev:hover,
+.marketplace-next:hover{
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    border-color:transparent;
+
+    transform:translateY(-3px);
+
+}
+
+/* ========================================
+   SLIDER
+======================================== */
+
+.marketplaceSwiper{
+
+    overflow:visible;
+    padding-bottom:10px;
+
+}
+
+.marketplaceSwiper .swiper-slide{
+
+    height:auto;
+
+}
+
+/* ========================================
+   CTA BUTTON
+======================================== */
+
+.marketplace-button{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    text-decoration:none;
+    color:#fff;
+    font-weight:400;
+    padding:12px 18px;
+    border-radius:8px;
+    background: var(--gradient-purple-2);
+    transition:var(--transition);
+    box-shadow: 0px 4px 6px -1px #0000001A;
+}
+
+.marketplace-button:hover{
+
+    color:#fff;
+
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 18px 40px rgba(108,60,244,.45);
+
+}
+
+.marketplace-button i{
+
+    transition:.3s;
+
+}
+
+.marketplace-button:hover i{
+
+    transform:translateX(5px);
+
+}
+
+/* ========================================
+   MARKETPLACE CARD
+======================================== */
+
+.market-card{    
+    background:#FAFAFA;
+    border-radius:22px;
+    padding:22px;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    transition:all .35s ease;
+    border:1px solid #E5E7EB;
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+    overflow:hidden;
+    position:relative;
+}
+
+.market-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 30px 60px rgba(0,0,0,.12);
+}
+
+/* ========================================
+   TOP
+======================================== */
+
+.market-card-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin-bottom:24px;
+}
+
+/* ========================================
+   ICON
+======================================== */
+
+.market-icon{
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:14px;
+
+    object-fit:cover;
+
+    background:#fff;
+
+    padding:6px;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+
+}
+
+/* ========================================
+   POPULAR BADGE
+======================================== */
+
+.popular-badge{
+    display:inline-flex;
+    align-items:center;
+    padding:7px 15px;
+    border-radius:999px;
+    color:#fff;
+    font-size:.78rem;
+    font-weight:600;
+    background:linear-gradient(
+        135deg,
+        #7B4DFF,
+        #5B2ED3
+    );
+}
+
+/* ========================================
+   TITLE
+======================================== */
+
+.market-card h3{
+    font-size:2rem;
+    font-weight:700;
+    color:#222;
+    margin-bottom:12px;
+}
+
+/* ========================================
+   DESCRIPTION
+======================================== */
+
+.market-card p{
+    color:#6F6F77;
+    line-height:1.25;
+    font-size: var(--label-2);
+    flex-grow:1;
+}
+
+/* ========================================
+   DIVIDER
+======================================== */
+
+.market-card hr{
+    margin:10px 0;    
+    border-top:1px solid #E5E7EB;
+}
+
+/* ========================================
+   DETAIL BUTTON
+======================================== */
+
+.detail-btn{
+    display:inline-flex;
+    align-items:center;    
+    text-decoration:none;
+    color:#212121;
+    border:1px solid #E5E7EB;
+    padding:10px 18px;
+    border-radius:999px;
+    font-weight:400;
+    font-size: var(--label-3);
+    width:fit-content;
+    transition:.3s;
+    background:#FAFAFA;
+    /* width: 105px;
+    height: 32px; */
+    gap: 17px;    
+}
+
+.detail-btn:hover{
+
+    background:linear-gradient(
+        135deg,
+        #6C3CF4,
+        #5B2ED3
+    );
+
+    color:#fff;
+
+    border-color:transparent;
+
+}
+
+.detail-btn i{
+
+    transition:.3s;
+
+}
+
+.detail-btn:hover i{
+
+    transform:translateX(3px);
+
+}
+
+/* ========================================
+   CARD HOVER EFFECT
+======================================== */
+
+.market-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:5px;
+
+    background:linear-gradient(
+        90deg,
+        #6C3CF4,
+        #8E5BFF
+    );
+
+    transform:scaleX(0);
+
+    transform-origin:left;
+
+    transition:.35s;
+
+}
+
+.market-card:hover::before{
+
+    transform:scaleX(1);
+
+}
+
+/* ========================================
+   SWIPER
+======================================== */
+
+.swiper{
+
+    overflow:visible;
+
+}
+
+.swiper-slide{
+
+    height:auto;
+
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width:1200px){
+
+    .marketplace-title{
+
+        font-size:3rem;
+
+    }
+
+}
+
+@media (max-width:992px){
+
+    .marketplace-title{
+
+        font-size:2.5rem;
+
+    }
+
+    .marketplace-description{
+
+        margin-top:30px;
+
+    }
+
+    .marketplace-navigation{
+
+        justify-content:flex-start;
+
+        margin-top:25px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .marketplace-section{
+
+        padding:70px 0;
+
+    }
+
+    .marketplace-title{
+
+        font-size:2rem;
+
+        line-height:1.3;
+
+    }
+
+    .market-card{
+
+        padding:20px;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .market-card h3{
+
+        font-size:1.6rem;
+
+    }
+
+    .marketplace-button{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+    .marketplace-navigation{
+
+        display:none;
+
+    }
+
+}

@@ -1,0 +1,125 @@
+.faq-section {
+    background:#FAFAFA;
+    padding: 40px 0;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+/*======================*/
+
+.faq-heading {
+    max-width: 760px;
+    margin: auto;
+    margin-bottom: 70px;
+}
+
+.faq-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    color: #5b33ff;
+    padding: 10px 22px;
+    border-radius: 12px;
+    font-weight: 600;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+}
+
+.faq-heading h2 {
+    color: var(--secondary-neutral-black);
+    font-size: var(--h3-heading);
+    font-weight: 400;    
+    line-height: 1.2;
+}
+
+.faq-heading p {
+    color: #6B7280;
+    font-size: var(--label-1);
+    line-height: 1.5;
+    max-width: 760px;
+    margin: 25px auto 0;
+}
+
+.btn-contact {
+    padding: 15px 36px;
+    border-radius: 14px;
+    color: #fff;
+    font-weight: 600;
+    background: linear-gradient(135deg,
+            #7d52ff,
+            #5d2fff);
+    box-shadow: 0 15px 40px rgba(88, 61, 255, .35);
+    transition: .3s;
+}
+
+.btn-contact:hover {
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/*======================*/
+
+.custom-faq {
+    overflow: hidden;
+}
+
+.accordion-item {
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .12);
+    background: #FAFAFA;
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+/*======================*/
+
+.accordion-button {
+    background: #FAFAFA;
+    color: var(--secondary-neutral-black);
+    font-size: var(--label-1);
+    font-weight: 500;
+    padding: 10px;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background: #fff;
+    color: #5d2fff;
+}
+
+.accordion-button::after {
+    background-size: 18px;
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background-color: #fff;
+    background-position: center;
+}
+
+.accordion-button:not(.collapsed)::after {
+    transform: rotate(-180deg);
+}
+
+/*======================*/
+
+.accordion-body {
+    background: #F9F9F9;
+    color: #6B7280;
+    font-size: var(--label-2);
+    line-height: 1.5;
+    padding: 20px;
+}
+
+/*======================*/
+
+@media(max-width:992px) {
+    .faq-heading h2 {
+        font-size: 40px;
+    }
+
+    .accordion-button {
+        font-size: 20px;
+        padding: 24px;
+    }
+}

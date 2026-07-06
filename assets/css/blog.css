@@ -1,0 +1,112 @@
+.blog-section {
+    background:#FAFAFA;
+    padding: 40px 0;
+    overflow: hidden;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+/*==========================*/
+.blog-header {
+    margin-bottom: 70px;
+}
+.blog-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    color: #5c35ff;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: 600;
+    box-shadow: 0 10px 30px rgba(255, 255, 255, .08);
+}
+.blog-header h2 {
+    color: var(--secondary-neutral-black);
+    font-size: var(--h3-heading);
+    font-weight: 400;    
+    line-height: 1.2;
+}
+.blog-description {
+    margin-bottom: 70px;
+    color: #6B7280;
+    font-size: var(--label-1);
+    line-height: 1.5;
+    max-width: 760px;
+    margin: 25px auto 25px;
+}
+
+/*==========================*/
+.btn-blog {
+    display: inline-flex;
+    align-items: center;
+    background:
+    linear-gradient(135deg,
+            #7c4dff,
+            #5b30ff);
+    color: white;
+    padding: 16px 34px;
+    border-radius: 14px;
+    font-weight: 600;
+    box-shadow: 0 18px 40px rgba(91, 48, 255, .35);
+    transition: .35s;
+}
+.btn-blog:hover {
+    transform: translateY(-4px);
+    color: white;
+}
+
+/*==========================*/
+.blog-card {
+    transition: .35s;
+    cursor: pointer;
+}
+.blog-card:hover {
+    transform: translateY(-8px);
+}
+
+/*==========================*/
+.blog-image {
+    overflow: hidden;
+    border-radius: 22px;
+    margin-bottom: 24px;
+}
+.blog-image img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    transition: .45s;
+}
+.blog-card:hover img {
+    transform: scale(1.08);
+}
+
+/*==========================*/
+.blog-date {
+    display: block;
+    color: #a8a8a8;
+    margin-bottom: 18px;
+    font-size: 15px;
+}
+.blog-content h3 {
+    font-size: var(--h5-heading);
+    font-weight: 400;
+    color: #222;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+.blog-card:hover h3 {
+    color: #8f78ff;
+}
+
+/*==========================*/
+@media(max-width:992px) {
+    .blog-header h2 {
+        font-size: 42px;
+    }
+    .blog-content h3 {
+        font-size: 26px;
+    }
+    .blog-description {
+        margin-top: 25px;
+    }
+}
