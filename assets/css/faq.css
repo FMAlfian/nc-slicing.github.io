@@ -13,15 +13,14 @@
 }
 
 .faq-badge {
-    display: inline-flex;
+    display: inline-flex;    
+    padding: 8px 14px;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
-    background: #fff;
-    color: #5b33ff;
-    padding: 10px 22px;
-    border-radius: 12px;
-    font-weight: 600;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+    gap: 6px;
+    border-radius: 6px;
+    border: 1px solid var(--neutral-stroke, #E5E7EB);
+    background: #FAFAFA;
 }
 
 .faq-heading h2 {

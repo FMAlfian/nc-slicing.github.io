@@ -53,7 +53,7 @@ html {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Mona Sans", sans-serif;
     background: var(--bg);
     color: var(--text);
     overflow-x: hidden;
@@ -72,18 +72,24 @@ button {
     outline: none;
 }
 
-.ml-n12 {
-    margin-left: -1.2em !important;
-}
-
-.mr-n12 {
-    margin-right: -1.2em !important;
-}
-
 .mx-auto {
     margin: 0px auto;
 }
 
 .my-auto {
     margin: auto 0px;
+}
+
+.grey-line-light {
+    font-size: var(--label-1);
+    font-weight: 300;
+}
+
+.ls-15px {
+    letter-spacing: 1.5px;
+}
+
+.my-0 {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
 }

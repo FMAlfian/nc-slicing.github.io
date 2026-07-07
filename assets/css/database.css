@@ -1,8 +1,31 @@
 .database-section {
     background:#FAFAFA;
-    padding: 40px 0;
+    /* padding: 40px 0; */
+    padding-bottom: 40px;
     overflow: hidden;
     border-bottom: 1px solid #E5E7EB;
+}
+
+.database-container {
+    display: flex;
+    width: 1339px;    
+    flex-direction: column;
+    align-items: center;
+    gap: 19px;
+    border: 1px solid #E5E5E5;
+}
+
+.banner-container {
+    display: flex;
+    width: 1339px;
+    height: 957px;
+    padding: 28px 30.387px 36px 32px;
+    justify-content: center;
+    align-items: center;    
+    border-right: 1px solid #E5E5E5;
+    border-left: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
+    background: #FAFAFA;
 }
 
 /*==========================
@@ -10,21 +33,21 @@ Heading
 ===========================*/
 
 .section-heading {
-    max-width: 900px;
-    margin: auto;
-    margin-bottom: 80px;
+    height: 249px;
+    flex-shrink: 0;
+    align-self: stretch;
+    margin-top: 20px;
 }
 
 .section-badge {
-    display: inline-flex;
+    display: inline-flex;    
+    padding: 8px 14px;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
-    padding: 10px 22px;
-    border-radius: 12px;
-    border: 1px solid #E5E7EB;
+    gap: 6px;
+    border-radius: 6px;
+    border: 1px solid var(--neutral-stroke, #E5E7EB);
     background: #FAFAFA;
-    font-weight: 500;
-    color: #6f42ff;
 }
 
 .section-heading h2 {
@@ -228,11 +251,37 @@ Responsive
 ===========================*/
 
 @media(max-width:992px) {
+    .database-section {
+        margin-top: 3rem;
+    }
+    .database-container {
+        display: flex;
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #E5E5E5;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+    }
     .database-banner {
-        padding: 40px;
+        background:
+            linear-gradient(135deg,
+                #f5ebff,
+                #f3eaff);
+        border-radius: 28px;
+        padding: 15px;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 35px;
     }
     .database-banner h3 {
         font-size: 36px;
+    }
+    .section-heading {
+        height: auto;
+        flex-shrink: 0;
+        align-self: stretch;
     }
     .section-heading h2 {
         font-size: 40px;
@@ -246,5 +295,16 @@ Responsive
     }
     .feature-card {
         padding: 30px;
+    }
+    .banner-container {
+        display: flex;
+        width: 100%;        
+        padding: 28px 30.387px 36px 32px;
+        justify-content: center;
+        align-items: center;    
+        border-right: 1px solid #E5E5E5;
+        border-left: 1px solid #E5E5E5;
+        border-bottom: 1px solid #E5E5E5;
+        background: #FAFAFA;
     }
 }

@@ -10,15 +10,14 @@
     margin-bottom: 70px;
 }
 .blog-badge {
-    display: inline-flex;
+    display: inline-flex;    
+    padding: 8px 14px;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
-    background: #fff;
-    color: #5c35ff;
-    padding: 10px 20px;
-    border-radius: 12px;
-    font-weight: 600;
-    box-shadow: 0 10px 30px rgba(255, 255, 255, .08);
+    gap: 6px;
+    border-radius: 6px;
+    border: 1px solid var(--neutral-stroke, #E5E7EB);
+    background: #FAFAFA;
 }
 .blog-header h2 {
     color: var(--secondary-neutral-black);

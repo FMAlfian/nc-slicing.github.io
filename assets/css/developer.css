@@ -27,15 +27,14 @@
 }
 
 .developer-badge {
-    display: inline-flex;
-    gap: 10px;
+    display: inline-flex;    
+    padding: 8px 14px;
+    justify-content: center;
     align-items: center;
-    padding: 10px 20px;
-    background: white;
-    border-radius: 12px;
-    color: #5b33ff;
-    font-weight: 600;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, .06);
+    gap: 6px;
+    border-radius: 6px;
+    border: 1px solid var(--neutral-stroke, #E5E7EB);
+    background: #FAFAFA;
 }
 
 .developer-heading h2 {

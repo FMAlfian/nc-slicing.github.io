@@ -9,26 +9,25 @@
 }
 
 .stats-wrapper {
-    display: grid;
-    grid-template-columns: 8% 25% 20% 20% 25% 8%;
+    display: flex;
     border-top: 1px solid #ececec;
     border-bottom: 1px solid #ececec;
+    justify-content: space-between;
+    justify-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
 }
 
 .stats-item{
-
     min-height:190px;
-
     display:flex;
     flex-direction:column;
     justify-content:center;
-
     padding:45px 42px;
-
     position:relative;
-
     transition:.35s ease;
-
     background:#fff;
 }
 
@@ -41,30 +40,19 @@
 }
 
 .stats-label{
-
     font-size:14px;
-
     font-weight:600;
-
     letter-spacing:3px;
-
     color:#6d7384;
-
     text-transform:uppercase;
-
     margin-bottom:10px;
 }
 
 .stats-number{
-
     font-size:56px;
-
     font-weight:700;
-
     line-height:1;
-
     color:#383b57;
-
     margin-bottom:12px;
 }
 
@@ -78,52 +66,33 @@
 }
 
 .stats-desc{
-
     font-size:20px;
-
     color:#6b7080;
-
     margin:0;
-
     font-weight:500;
 }
 
 /* Rating */
-
 .rating-area{
-
     display:flex;
-
     align-items:center;
-
     gap:12px;
 }
 
 .stars{
-
     color:#ff7a1a;
-
     font-size:22px;
-
     letter-spacing:2px;
-
     line-height:1;
 }
 
 .rating-text{
-
     display:flex;
-
     align-items:center;
-
     gap:8px;
-
     color:#6b7080;
-
     font-size:15px;
-
     letter-spacing:2px;
-
     text-transform:uppercase;
 }
 
@@ -132,16 +101,40 @@
 }
 
 .rating-text span{
-
     font-weight:600;
-
     font-size:14px;
 }
+
+.user-stats {
+    display: flex;
+    padding: 41.5px 35px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    border-right: 1px solid #E5E5E5;
+    background: #FFF;
+}
+
+.partner-stats,
+.deployment-stats,
+.avg-deployment-stats {
+    display: flex;
+    width: 250px;
+    padding: 50px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 9px;    
+}
+
+.partner-stats,
+.deployment-stats {
+    border-right: 1px solid #E5E5E5;
+}
+
 
 /* Responsive */
 
 @media(max-width:1200px){
-
     .stats-wrapper{
         grid-template-columns:repeat(2,1fr);
     }
@@ -153,28 +146,25 @@
     .stats-item:nth-child(-n+2){
         border-bottom:1px solid #ececec;
     }
-
 }
 
 @media(max-width:768px){
-
-    .stats-wrapper{
-        grid-template-columns:1fr;
+    .grid-left,
+    .grid-right {
+        display: none;
     }
-
+    .stats-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
     .stats-item{
-
         border-right:none !important;
-
         border-bottom:1px solid #ececec;
-
         min-height:auto;
-
         padding:35px 25px;
     }
 
     .stats-number{
-
         font-size:42px;
     }
 
@@ -191,5 +181,19 @@
     .rating-area{
         flex-wrap:wrap;
     }
+    .user-stats,
+    .partner-stats,
+    .deployment-stats {
+        border-right: unset;
+        border-bottom: 1px solid #E5E5E5;
+    }
 
+    .partner-stats,
+    .deployment-stats,
+    .avg-deployment-stats {
+        width: 100%;
+        padding: 41.5px 45px;
+        gap: 6px;
+    }
+    
 }

@@ -5,8 +5,7 @@
         #090909;
     padding: 90px 0 35px;
     position: relative;
-    color: #fff;
-    z-index: -2;
+    color: #fff;    
 }
 
 
@@ -73,13 +72,20 @@
     border-color: #7b3cff;
 }
 
-.btn-subscribe {
-    background: linear-gradient(90deg, #6b36ff, #844dff);
-    color: white;
-    padding: 0 30px;
-    border-radius: 12px;
-    font-weight: 600;
-    height: 58px;
+.btn-subscribe {    
+    border-radius: 20px;
+    background: linear-gradient(136deg, #6A37D5 19.25%, #371D6F 134.96%);
+
+    box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.10), 0 4px 6px -1px rgba(0, 0, 0, 0.10);
+    color: #FAFAFA;
+    text-align: center;
+    
+    font-family: "Mona Sans";
+    font-size: var(--label-2);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.16px;
 }
 
 .btn-subscribe:hover {
@@ -162,6 +168,13 @@
     color: white;
     background: linear-gradient(90deg, #6935ff, #864bff);
     transition: .3s;
+
+    font-family: "Mona Sans";
+    font-size: var(--label-2);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.16px;
 }
 
 .back-top:hover {
@@ -185,21 +198,27 @@
     bottom: -145px;
     width: 100%;
     height: 100%;
-    background: url(../image/pattern-bottom-left.png) no-repeat;
-    z-index: -1;
+    background: url(../image/pattern-bottom-left.png) no-repeat;    
 }
 
 .pattern-right {
     position: absolute;
-    right: -700px;
+    /* right: -700px; */
+    right: calc(1vw * -59);
     top: 0px;
     width: 100%;
     height: 100%;
-    background: url(../image/pattern-right-top.png) no-repeat;
-    z-index: -1;
+    background: url(../image/pattern-right-top.png) no-repeat;    
 }
 
 /* ========================= */
+
+@media(max-width:1920px) {
+    .footer-section {
+        padding: 90px 0 35px;
+    }
+
+}
 
 @media(max-width:991px) {
     .footer-section {
@@ -207,9 +226,12 @@
     }
 
     .back-top {
-        position: static;
+        display: none;
+        /* position: static;
         margin-top: 50px;
         display: block;
+        width: 50%;
+        margin: 20px auto 0px; */
     }
 
     .footer-logo h3 {
@@ -221,21 +243,23 @@
     }
 
     .pattern-left {
-        position: absolute;
+        display: none;
+        /* position: absolute;
         left: 0px;
         bottom: -1000px;
         width: 100%;
         height: 100%;
-        background: url(../image/pattern-bottom-left.png) no-repeat;
+        background: url(../image/pattern-bottom-left.png) no-repeat; */
     }
 
     .pattern-right {
-        position: absolute;
+        display: none;
+        /* position: absolute;
         right: 0px;
         top: 0px;
         width: 100%;
         height: 100%;
-        background: url(../image/pattern-right-top.png) no-repeat;
+        background: url(../image/pattern-right-top.png) no-repeat; */
     }
 
 }
