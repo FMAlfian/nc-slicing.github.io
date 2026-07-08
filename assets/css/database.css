@@ -1,6 +1,5 @@
 .database-section {
     background:#FAFAFA;
-    /* padding: 40px 0; */
     padding-bottom: 40px;
     overflow: hidden;
     border-bottom: 1px solid #E5E7EB;
@@ -246,205 +245,91 @@ Tags
     font-weight: 600;
 }
 
-/*==========================
-Responsive
-===========================*/
 
-/* @media(max-width:992px) {
-    .database-section {
-        margin-top: 3rem;
-    }
+/* ===========================================
+Cards
+=========================================== */
+
+.database-card {
+    width: 100%;
+    display: block;
+    border-radius: 22px;
+    transition: .35s;
+}
+
+.database-card:hover {
+    transform: translateY(-8px);
+}
+
+/* ===========================================
+Mobile
+=========================================== */
+
+@media (max-width:726px) {
+
     .database-container {
         display: flex;
-        width: auto;
+        height: 625px !important;
         flex-direction: column;
         align-items: center;
-        border: 1px solid #E5E5E5;
-        flex-wrap: nowrap;
         align-content: center;
-        justify-content: center;
+        flex-wrap: nowrap;
+        width: auto !important;
+        border-bottom: unset !important;
     }
-    .database-banner {
-        background:
-            linear-gradient(135deg,
-                #f5ebff,
-                #f3eaff);
-        border-radius: 28px;
-        padding: 15px;
-        position: relative;
-        overflow: hidden;
-        margin-bottom: 35px;
+
+    hr.my-0 {
+        display: none;
     }
-    .database-banner h3 {
-        font-size: 36px;
+
+    .database-section {
+        padding: 20px;        
+        display: contents;
     }
-    .section-heading {
-        height: auto;
-        flex-shrink: 0;
-        align-self: stretch;
-    }
-    .section-heading h2 {
-        font-size: 40px;
-    }
-    .database-image {
-        text-align: center;
-        margin-top: 40px;
-    }
-    .database-image img {
-        max-width: 100%;
-    }
-    .feature-card {
-        padding: 30px;
-    }
+
     .banner-container {
         display: flex;
-        width: 100%;        
-        padding: 28px 30.387px 36px 32px;
+        width: auto !important;
+        height: 1200px;
+        margin-bottom: 320px;        
         justify-content: center;
-        align-items: center;    
+        align-items: center;
         border-right: 1px solid #E5E5E5;
         border-left: 1px solid #E5E5E5;
         border-bottom: 1px solid #E5E5E5;
         background: #FAFAFA;
     }
-} */
 
-/* ==========================================================
-   TABLET (<992px)
-========================================================== */
+    .database-container,
+    .banner-container {
 
-@media (max-width:991.98px){
-
-    .database-container{
-        padding:80px 0 50px;
+        padding-left: 16px !important;
+        padding-right: 16px !important;
     }
 
-    .banner-container{
-        padding:60px 0;
+    .section-heading h2 {
+        font-size: 28px;
     }
 
-    .section-heading h2{
-        font-size:38px;
+    .database-banner {
+        padding: 20px;
+        height: 330px;
     }
 
-    .database-banner{
-        padding:50px;
-        text-align:center;
+    .database-banner h3 {
+        font-size: 24px;
     }
 
-    .database-banner .col-lg-6:first-child{
-        margin-bottom:40px;
-    }
+    .database-banner p {
+        font-size: 14px;
+    }    
 
-    .database-banner h3{
-        font-size:34px;
-    }
-
-    .database-image{
-        margin-top:20px;
-    }
-
-}
-
-
-/* ==========================================================
-   MOBILE (<768px)
-========================================================== */
-
-@media (max-width:767.98px){
-
-    .database-container{
-        padding:60px 20px 40px;
-    }
-
-    .banner-container{
-        padding:40px 20px;
-    }
-
-    .section-heading h2{
-        font-size:30px;
-        line-height:1.3;
-        margin:18px 0;
-    }
-
-    .section-heading p{
-        font-size:16px;
-        line-height:1.7;
-    }
-
-    .database-banner{
-        padding:30px 24px;
-        border-radius:24px;
-        text-align:center;
-    }
-
-    .database-banner h3{
-        font-size:26px;
-        line-height:1.35;
-    }
-
-    .database-banner p{
-        font-size:15px;
-        margin:20px 0 28px;
-    }
-
-    .database-image{
-        margin-top:30px;
-    }
-
-    .database-image img{
-        max-width:100%;
-    }
-
-    .btn-primary-custom{
-        width:100%;
-        justify-content:center;
-        padding:15px 20px;
-    }
-
-    .banner-section .row{
-        margin-top:8px !important;
-    }
-
-    .banner-section .col-lg-4{
-        margin-bottom:12px;
-    }
-
-}
-
-
-/* ==========================================================
-   SMALL MOBILE (<576px)
-========================================================== */
-
-@media (max-width:575.98px){
-
-    .database-container{
-        padding:50px 16px 35px;
-    }
-
-    .banner-container{
-        padding:32px 16px;
-    }
-
-    .section-heading h2{
-        font-size:26px;
-    }
-
-    .database-banner{
-        padding:24px 18px;
-    }
-
-    .database-banner h3{
-        font-size:22px;
-    }
-
-    .database-banner p{
-        font-size:14px;
-    }
-
-    .btn-primary-custom{
-        font-size:15px;
+    .database-image img {
+        max-width: 210px;
+        position: absolute;
+        bottom: 0px;
+        right: -75px;
+        z-index: 0;
     }
 
 }
